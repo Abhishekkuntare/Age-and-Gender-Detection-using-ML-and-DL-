@@ -1,0 +1,25 @@
+app.py file
+
+The given program is a Python script that uses the OpenCV library to perform face detection and age-gender prediction on images or webcam video streams. It uses pre-trained deep learning models to accomplish these tasks.
+
+Here's an explanation of the program flow:
+
+The script imports the necessary libraries: OpenCV (cv2), NumPy (np), math, argparse, Flask, PIL (Python Imaging Library), and io.
+
+The highlightFace function is defined, which takes a neural network model (net), an input frame (image), and an optional confidence threshold (conf_threshold). This function is responsible for detecting faces in the input frame and highlighting them with bounding boxes. It also returns the detected face regions as a list of bounding boxes.
+
+The main part of the script starts by loading pre-trained models for face detection, age prediction, and gender prediction using cv2.dnn.readNet.
+
+The script defines two main functions: gen_frames and gen_frames_photo, which handle the video streaming from the webcam and processing of uploaded images, respectively.
+
+The gen_frames function sets up a webcam video stream (cv2.VideoCapture(0)) and processes each frame. It first detects faces in each frame using the face detection model. If a face is detected, it extracts the face region and passes it through the gender and age prediction models. The gender and age predictions are then displayed on the output frame, and the frame is sent as a continuous stream using Flask's Response with MIME type 'multipart/x-mixed-replace; boundary=frame'.
+
+The /webcam route renders a template called webcam.html, which is responsible for displaying the webcam video stream and the age-gender predictions.
+
+The /video_feed route is used for serving the video stream and connects to the gen_frames function.
+
+The /upload route is used to handle uploaded images. It reads the uploaded image file, converts it to a NumPy array, and then calls the gen_frames_photo function to process the image and return the age-gender predictions. The result is then sent as a continuous stream using the same MIME type.
+
+The program runs the Flask app by calling app.run(debug=True).
+
+To use the program, you would run it in a Python environment and then access the web interface (localhost) to interact with the webcam or upload an image for face detection and age-gender prediction. The results will be displayed on the web page.

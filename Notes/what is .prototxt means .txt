@@ -1,0 +1,6 @@
+what is .prototxt means ?
+In the context of deep learning and the Caffe framework, .prototxt stands for "protocol buffer text format." It is a human-readable format used to define the architecture of a neural network model in Caffe.
+
+Protocol Buffers, or Protobufs, are a way of serializing structured data in a compact and efficient format. They are developed by Google and used for various purposes, including configuration files in Caffe.
+
+The .prototxt file contains a textual representation of the network's layers, their configurations, and their connections. It specifies the sequence of layers, their types (e.g., Convolution, Pooling, Fully Connected, etc.), and their respective parameters (e.g., kernel size, number of output channels, activation functions, etc.).

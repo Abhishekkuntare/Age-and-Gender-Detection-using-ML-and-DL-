@@ -1,0 +1,131 @@
+.home {
+  height: 120vh;
+  background-color: #e3e3e4;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Nunito", sans-serif;
+}
+.home_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.home_nav_logo {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home_nav_logo > h1 {
+  font-size: 26px;
+  color: #404040;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: 'Press Start 2P', cursive;
+}
+.home_nav_logo > img {
+  width: 80px;
+
+}
+.home_items > a {
+  font-size: 20px;
+  font-weight: 300;
+  text-decoration: none;
+  color: #404040;
+  margin-left: 10px;
+  font-family: "Nunito", sans-serif;
+}
+.home_part_1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.home_part_1_img {
+  width: 95%;
+}
+.home_part_1_title_main {
+  margin-top: 20px;
+}
+.home_part_1_title > h2 {
+  line-height: 45px;
+  text-align: start;
+  font-weight:100;
+  font-size: 40px;
+  color: #404040;
+  text-transform: uppercase;
+  font-family: "Lilita One", cursive;
+
+}
+.home_part_1_title_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.home_part_1_title_p{
+  width: 300px;
+  color: black;
+  font-weight: 800;
+}
+.home_part_1_h1 > h1 {
+  color: white;
+  font-family: "Lilita One", cursive;
+  font-size: 217px;
+}
+.home_part_1_data_main {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.home_part_1_data {
+  display: flex;
+  justify-content: space-around;
+}
+.home_part_1_data > div {
+  margin-left: 20px;
+  text-decoration: underline;
+  color: black;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.home_part_1_data_np {
+  display: flex;
+align-items: center;justify-content: center;
+}
+
+.home_part_1_data_np > p{
+    color: black;
+    font-size: 30px;
+    margin-right: 5px;
+    font-weight: 700;
+}
+.home_part_1_data_np > span{
+    border: 1px solid black;
+    height: 1px;
+    width: 130px;
+}
+
+.home_part_1_data_circle{
+ width: 150px;   
+ height: 150px;
+ border: 2px solid #000000;
+ border-radius: 50%;
+display: flex;align-items: center;justify-content: center;
+font-family: "Lilita One", cursive;
+
+}
+.home_part_1_data_circle > h1{
+    color: #000000;
+    text-transform: uppercase;
+    font-family: "Lilita One", cursive;
+    
+}
+
+.home_part_1_data_h1 > h1{
+      color: white;
+      font-family: "Lilita One", cursive;
+      font-size: 217px;
+
+  }

@@ -1,0 +1,86 @@
+.service {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.service_data > h1 {
+  color: white;
+  font-weight: 900;
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 2px;
+  font-size: 70px;
+}
+.service_data {
+  margin-left: 20px;
+}
+.service_data > span {
+  font-family: "Luckiest Guy", cursive;
+  color: #93fa7d;
+}
+.service_data > p {
+  width: 300px;
+  color: white;
+  font-family: "Ultra", serif;
+}
+
+.service_webcam {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.service_webcam > img {
+  width: 70%;
+  border-radius: 10%;
+}
+.service_webcam > a > input {
+  width: 400px;
+  color: black;
+  background-color: #93fa7d;
+  font-family: "Ultra", serif;
+  height: 70px;
+  font-size: 25px;
+  border-radius: 10px;
+  margin-top: 10px;
+  transition: all 1 ease;
+}
+.service_webcam > a > input:hover {
+  background-color: #55f531;
+  transform: translateY(10px);
+  cursor: pointer;
+}
+.service_selete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.service_selete > img {
+  border-radius: 10%;
+  width: 70%;
+}
+.service_selete > form {
+  margin-top: 10px;
+  font-family: "Ultra", serif;
+  color: white;
+  text-align: center;
+}
+
+.service_btn >input{
+  width: 400px;
+  color: black;
+  background-color: #599cec;
+  font-family: "Ultra", serif;
+  height: 70px;
+  font-size: 25px;
+  border-radius: 10px;
+  margin-top: 10px;
+  transition: all 0.5 ease-in-out;
+}
+.service_btn >input:hover{
+    background-color: #4894f2;
+    transform: translateX(20px);
+    cursor: pointer;
+}
