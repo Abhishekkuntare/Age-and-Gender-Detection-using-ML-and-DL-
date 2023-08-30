@@ -23,16 +23,25 @@
   font-family: 'Press Start 2P', cursive;
 }
 .home_nav_logo > img {
-  width: 80px;
+  width: 60px;
 
 }
 .home_items > a {
-  font-size: 20px;
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: 700;
   text-decoration: none;
   color: #404040;
-  margin-left: 10px;
+  margin-left: 40px;
   font-family: "Nunito", sans-serif;
+  border: 1px solid black;
+  padding: 7px;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+  
+}
+.home_items > a:hover{
+  background-color: black;
+  color: white;
 }
 .home_part_1 {
   display: flex;

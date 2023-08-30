@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../static/styles/service.css" />
   <link rel="stylesheet" href="../static/styles/explore.css" />
   <link rel="stylesheet" href="../static/styles/aj.css" />
+  <link rel="stylesheet" href="../static/styles/about.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
   <link
     rel="stylesheet"
@@ -239,52 +240,68 @@
         <span>Go live or Drag image</span>
 
         <p>
-          Image processing plays a crucial role in age and gender prediction, especially when the input data consists of images. Image processing techniques are used to extract relevant features from the images and prepare the data for age and gender prediction models. Here are some key roles of image processing in this context:</p>
+          Image processing plays a crucial role in age and gender prediction,
+          especially when the input data consists of images. Image processing
+          techniques are used to extract relevant features from the images and
+          prepare the data for age and gender prediction models. Here are some
+          key roles of image processing in this context:
+        </p>
       </div>
       <div class="service_webcam">
-        <img src="https://cdn.dribbble.com/userupload/7411457/file/original-d7e59363e3e7239565cf155a749ef514.png?resize=1200x900" alt="">
+        <img
+          src="https://cdn.dribbble.com/userupload/7411457/file/original-d7e59363e3e7239565cf155a749ef514.png?resize=1200x900"
+          alt=""
+        />
         <a href="/webcam"
           ><input type="submit" class="button" value="Go live to detect"
         /></a>
       </div>
 
       <div class="service_selete">
-        <img src="https://cdn.dribbble.com/userupload/8819825/file/original-9fc339edde7f2c5f9dd312d0e29bf8e6.png?resize=1200x900" alt="">
+        <img
+          src="https://cdn.dribbble.com/userupload/8819825/file/original-9fc339edde7f2c5f9dd312d0e29bf8e6.png?resize=1200x900"
+          alt=""
+        />
         <form action="/upload" method="POST" enctype="multipart/form-data">
           Select image to upload:
           <input type="file" name="fileToUpload" id="fileToUpload" />
           <div class="service_btn">
-            <input
-              type="submit"
-              value="Upload and detect"
-              name="submit"
-            />
+            <input type="submit" value="Upload and detect" name="submit" />
           </div>
         </form>
       </div>
     </div>
 
     <!-- Container (About Section) -->
-    <div class="aj-content aj-container aj-padding-64" id="about">
-      <h3 class="aj-center">ABOUT THE PROJECT</h3>
-      <p class="aj-center"><em>ML Project</em></p>
-      <p>
-        We will use Deep Learning to accurately identify the gender and age of a
-        person from a single image of a face.
-      </p>
+    <div class="about">
+      <h1>Safeguarding Your Digital Frontier</h1>
+
+      <p>Meet Our Team</p>
+      <div class="about_imgs">
+        <div class="about_imgs_div">
+          <img src="/static/assets/img2.jpg" alt="" />
+          <h2>Abhishek Kuntare</h2>
+          <p>Founder, Head of Project</p>
+        </div>
+
+        <div class="about_imgs_div">
+          <img
+            src="https://abhishekkuntare0210.vercel.app/images/abhi.jpg"
+            alt=""
+          />
+          <h2>Abhishek Kuntare</h2>
+          <p>Co-Founder,Developer</p>
+        </div>
+      </div>
+      <div class="about_robot_img">
+        <img
+          src="https://cdn.dribbble.com/users/14268/screenshots/21033389/a07b5d0d-2c78-4df1-981f-82b2aaa2076e.png"
+          alt=""
+        />
+      </div>
     </div>
 
-    <!-- Footer -->
-    <footer
-      class="aj-center aj-black aj-padding-64 aj-opacity aj-hover-opacity-off"
-    >
-      <a href="#home" class="aj-button aj-light-grey"
-        ><i class="fa fa-arrow-up aj-margin-right"></i>To the top</a
-      >
-    </footer>
-
     <script>
-      // Modal Image Gallery
       function onClick(element) {
         document.getElementById("img01").src = element.src;
         document.getElementById("modal01").style.display = "block";

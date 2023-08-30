@@ -1,0 +1,36 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Luckiest Guy", cursive;
+}
+.about > h1 {
+    font-size: 60px;
+color: black;
+  font-weight: 600;
+  font-family: "Luckiest Guy", cursive;
+}
+.about_imgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about_imgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about_imgs_div{
+
+    margin-left: 20px;
+}
+.about_imgs_div > img{
+border-radius: 50%;
+width: 300px;
+}
+
+.about_robot_img > img{
+    width: 70%;
+
+}
