@@ -26,6 +26,15 @@
   />
 
   <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Major+Mono+Display&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
     href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
     rel="stylesheet"
   />
@@ -41,6 +50,7 @@
   />
 
   <body>
+
     <!-- home  -->
     <div class="home" id="home">
       <!-- nav -->
@@ -122,59 +132,45 @@
       <div class="explore_titles_h1">
         <div class="explore_titles_h1_inner">
           <div>
-            <h1>Machine</h1>
-            <h1>Learning</h1>
-            <p>
-              Machine learning algorithms are utilized for age and gender
-              prediction tasks.
-            </p>
+            <h1 class="explore_title_color_h1_1">Machine</h1>
+            <h1 class="explore_title_color_h1_1">Learning</h1>
           </div>
-          <video src="../static/assets/animations/a1.mp4" loop autoplay muted />
+          <video
+          
+            onclick="toggleBox()"
+            src="../static/assets/animations/a1.mp4"
+            loop
+            autoplay
+            muted
+          />
         </div>
 
         <div class="explore_titles_h1_inner">
           <div>
-            <h1>Deep</h1>
-            <h1>Learning</h1>
-            <p>
-              Deep learning techniques, particularly neural networks, have shown
-              significant advancements in age and gender prediction data
-            </p>
+            <h1 class="explore_title_color_h1_2">Deep</h1>
+            <h1 class="explore_title_color_h1_2">Learning</h1>
           </div>
           <video src="../static/assets/animations/a2.mp4" loop autoplay muted />
         </div>
 
         <div class="explore_titles_h1_inner">
           <div>
-            <h1>Data</h1>
-            <h1>Preprocessing</h1>
-            <p>
-              Data preprocessing techniques play a vital role in preparing the
-              data for the age and gender prediction models.
-            </p>
+            <h1 class="explore_title_color_h1_3">Data</h1>
+            <h1 class="explore_title_color_h1_3">Preprocessing</h1>
           </div>
           <video src="../static/assets/animations/a6.mp4" loop autoplay muted />
         </div>
         <div class="explore_titles_h1_inner">
           <div>
-            <h1>Libraries &</h1>
-            <h1>Frameworks</h1>
-            <p>
-              Various libraries and frameworks simplify the implementation of
-              age and gender prediction models. spaCy
-            </p>
+            <h1 class="explore_title_color_h1_4">Libraries &</h1>
+            <h1 class="explore_title_color_h1_4">Frameworks</h1>
           </div>
           <video src="../static/assets/animations/a5.mp4" loop autoplay muted />
         </div>
         <div class="explore_titles_h1_inner">
           <div>
-            <h1>Data</h1>
-            <h1>Labeling</h1>
-
-            <p>
-              Age and gender prediction models require labeled datasets for
-              supervised learning.
-            </p>
+            <h1 class="explore_title_color_h1_5">CNN</h1>
+            <h1 class="explore_title_color_h1_5">Algorithm</h1>
           </div>
           <video src="../static/assets/animations/a4.mp4" loop autoplay muted />
         </div>
@@ -232,9 +228,9 @@
         </div>
       </div>
     </div> -->
+    
     <!-- service -->
-
-    <div class="service">
+    <div id="service" class="service">
       <div class="service_data">
         <h1>image processing</h1>
         <span>Go live or Drag image</span>
@@ -252,8 +248,9 @@
           src="https://cdn.dribbble.com/userupload/7411457/file/original-d7e59363e3e7239565cf155a749ef514.png?resize=1200x900"
           alt=""
         />
-        <a href="/webcam"
-          ><input type="submit" class="button" value="Go live to detect"
+        <a href="/webcam">
+          <p class="webcam_camera_p">Get web cam access directly</p>
+          <input type="submit" class="button" value="Go live to detect"
         /></a>
       </div>
 
@@ -272,33 +269,44 @@
       </div>
     </div>
 
-    <!-- Container (About Section) -->
-    <div class="about">
+    <!-- Container (Team Section) -->
+    <div id="team" class="about">
       <h1>Safeguarding Your Digital Frontier</h1>
 
       <p>Meet Our Team</p>
       <div class="about_imgs">
-        <div class="about_imgs_div">
-          <img src="/static/assets/img2.jpg" alt="" />
-          <h2>Abhishek Kuntare</h2>
-          <p>Founder, Head of Project</p>
-        </div>
-
         <div class="about_imgs_div">
           <img
             src="https://abhishekkuntare0210.vercel.app/images/abhi.jpg"
             alt=""
           />
           <h2>Abhishek Kuntare</h2>
-          <p>Co-Founder,Developer</p>
+          <p>Team Leader</p>
+        </div>
+
+        <div class="about_imgs_div">
+          <img src="/static/assets/as.png" alt="" />
+          <h2>Aswini Pande</h2>
+          <p>Data Analyst</p>
+        </div>
+        <div class="about_imgs_div">
+          <img src="/static/assets/h.png" alt="" />
+          <h2>Harsh Ramedwar</h2>
+          <p>Data Preprocessing</p>
+        </div>
+
+        <div class="about_imgs_div">
+          <img src="/static/assets/s.png" alt="" />
+          <h2>Swaraj Bokey</h2>
+          <p>Frontend Developer</p>
         </div>
       </div>
-      <div class="about_robot_img">
+      <!-- <div class="about_robot_img">
         <img
           src="https://cdn.dribbble.com/users/14268/screenshots/21033389/a07b5d0d-2c78-4df1-981f-82b2aaa2076e.png"
           alt=""
         />
-      </div>
+      </div> -->
     </div>
 
     <script>

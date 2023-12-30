@@ -4,13 +4,14 @@
 }
 .explore > h1 {
   padding-top: 30px;
-  color: black;
   font-size: 50px;
   font-weight: 500;
   text-align: center;
   font-family: "Luckiest Guy", cursive;
 }
+
 .explore_titles_h1 {
+  margin-top: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,10 +19,24 @@
 }
 .explore_titles_h1_inner > div > h1 {
   text-align: center;
-  color: white;
   font-size: 40px;
   font-family: "Bungee", cursive;
   text-transform: uppercase;
+}
+.explore_title_color_h1_1{
+  color: #da7e53;
+}
+.explore_title_color_h1_2{
+  color: #529b96;
+}
+.explore_title_color_h1_3{
+  color: #527493;
+}
+.explore_title_color_h1_4{
+  color: #96a494;
+}
+.explore_title_color_h1_5{
+  color: #e1cfc0;
 }
 .explore_titles_h1_inner > div > p {
   font-family: "Nunito", sans-serif;
@@ -36,4 +51,5 @@
 .explore_titles_h1_inner > video {
   border-radius: 10%;
   width: 70%;
+  cursor: pointer;
 }

@@ -35,6 +35,14 @@
   width: 70%;
   border-radius: 10%;
 }
+.webcam_camera_p{
+  text-align: center;
+  text-decoration: none;
+  font-family: "Ultra", serif;
+  color: white;
+  text-align: center;
+  font-size: 19px;
+}
 .service_webcam > a > input {
   width: 400px;
   color: black;
@@ -44,12 +52,14 @@
   font-size: 25px;
   border-radius: 10px;
   margin-top: 10px;
-  transition: all 1 ease;
+  transition: all 0.5s ease-in-out;
 }
 .service_webcam > a > input:hover {
-  background-color: #55f531;
-  transform: translateY(10px);
+  background-color: #ff5353;
+  transform: translateX(20px);
   cursor: pointer;
+  cursor: pointer;
+  width: 450px;
 }
 .service_selete {
   display: flex;
@@ -77,10 +87,11 @@
   font-size: 25px;
   border-radius: 10px;
   margin-top: 10px;
-  transition: all 0.5 ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .service_btn >input:hover{
-    background-color: #4894f2;
+    background-color: #f4ce0e;
     transform: translateX(20px);
     cursor: pointer;
+    width: 450px;
 }
