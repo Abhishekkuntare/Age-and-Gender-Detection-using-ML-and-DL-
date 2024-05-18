@@ -1,0 +1,7 @@
+what is caffeNet ?
+
+In simple terms, "CaffeNet" is a deep learning model, specifically a Convolutional Neural Network (CNN), that is used for image classification. It takes an image as input and then processes it through a series of layers to output probabilities for different classes that the image might belong to.
+
+CaffeNet is a deep learning model that was originally implemented using the Caffe framework. Caffe (Convolutional Architecture for Fast Feature Embedding) is an open-source deep learning framework developed by Berkeley Vision and Learning Center (BVLC) at the University of California, Berkeley.
+
+Caffe was one of the popular deep learning frameworks used in the early days of deep learning. It allowed researchers and developers to define and train deep neural networks for various tasks, including image classification, object detection, and more.

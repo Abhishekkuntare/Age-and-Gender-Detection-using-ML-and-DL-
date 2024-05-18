@@ -1,0 +1,34 @@
+ROLE: ASHWINI - Face Detection Model Integration:
+
+1. Face Detection Model Integration:
+Responsibility: Integrating the face detection model into the project.
+
+Tasks:
+Load the face detection model (likely the one specified in opencv_face_detector.pbtxt).
+Implement code to capture video frames, detect faces, and draw bounding boxes around them.
+Ensure smooth integration with the Flask app.
+
+Introduction:
+"Hello Sir! My part in our project was to make sure our system recognizes faces. It's like teaching our project to say 'Hello' when it sees a face."
+
+Responsibilities:
+"I worked on the part that captures the video, finds faces in each frame, and draws boxes around them. It's like being the detective who spots faces in a crowd."
+
+Model Integration:
+"I took a special tool, kind of like a magic lens for our project, called a face detection model. I made sure it knows how to look at each frame and find faces in it. It's like giving our project superhero vision."
+
+
+Coordination with Others:
+"I talked with my teammates to understand what they needed from the faces. For example, we wanted to predict age and gender. So, I made sure our face detection worked well with those parts. It's like making sure all the superheroes in a team can work together."
+
+Handling Challenges:
+"Sometimes, it was tricky to make sure our model works fast and doesn't miss any faces. I worked on solving those puzzles, making sure our face detection is quick and accurate. It's like fixing a superhero's gadgets to make sure they work perfectly."'
+
+Presenting to Sir:
+"When you see our project recognizing faces and drawing boxes around them, that's the part I worked on. I'll be happy to show you how it works and explain how we made our project recognize faces like a pro."
+
+Overall Contribution:
+"I feel proud that our project can 'see' faces now. It's like giving our project eyes and making it smarter. If you have any questions about how we made it happen, I'm here to share!"
+
+
+Encourage your friend to speak confidently, highlight the impact of his work on the overall project, and be ready to showcase the face detection feature to the sir. Emphasizing the collaboration with other parts of the project will also showcase the teamwork involved.

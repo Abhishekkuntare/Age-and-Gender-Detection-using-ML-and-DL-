@@ -1,0 +1,1 @@
+In summary, this part of the graph is responsible for processing input data through a Fused Batch Normalization operation, which is a common technique used in deep learning models for normalization and regularization. The model is likely part of a face detection pipeline in your project, helping to standardize and preprocess input data before further processing.

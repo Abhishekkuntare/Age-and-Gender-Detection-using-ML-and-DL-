@@ -1,0 +1,35 @@
+1. Face Detection Model Integration: Ashwini
+Responsibility: Integrating the face detection model into the project.
+Tasks:
+Load the face detection model (likely the one specified in opencv_face_detector.pbtxt).
+Implement code to capture video frames, detect faces, and draw bounding boxes around them.
+Ensure smooth integration with the Flask app.
+
+
+
+2. Agee and Gender Prediction Model Integration: Abhishek
+Responsibility: Integrating the age and gender prediction models.
+Tasks:
+Load the age and gender prediction models specified in age_deploy.prototxt, age_net.caffemodel, gender_deploy.prototxt, and gender_net.caffemodel.
+Implement code to predict age and gender from detected faces.
+Display the age and gender predictions on the output frames.
+
+
+3. Web Frontend (HTML/CSS): Swaraj
+Responsibility: Designing and implementing the web frontend.
+Tasks:
+Create HTML templates for the main page, webcam page, and any other necessary pages.
+Design the layout, including video display areas, buttons, and any other UI elements using CSS.
+Ensure a responsive and user-friendly interface.
+
+
+4. Flask App and Backend Integration: Harsh
+Responsibility: Managing the Flask application and backend logic.
+Tasks:
+Set up Flask routes for different functionalities (e.g., streaming video, handling file uploads).
+Manage the backend logic for processing video frames, invoking the models, and sending results to the frontend.
+Coordinate the interaction between the face detection and age/gender prediction components.
+
+
+Each team member can take ownership of one of these parts, and collaboration is essential for seamless integration. Regular communication and coordination will be key to ensure that each part aligns with the others. Additionally, consider creating clear interfaces or APIs between components to facilitate integration and testing.
+

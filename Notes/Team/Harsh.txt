@@ -1,0 +1,36 @@
+
+ROLE: HARSH -  Flask App and Backend Integration:
+
+4. Flask App and Backend Integration:
+Responsibility: Managing the Flask application and backend logic.
+Tasks:
+Set up Flask routes for different functionalities (e.g., streaming video, handling file uploads).
+Manage the backend logic for processing video frames, invoking the models, and sending results to the frontend.
+Coordinate the interaction between the face detection and age/gender prediction components.
+
+
+Introduction:
+
+"Hello Sir! I took care of the part that makes our project run smoothly behind the scenes. It's like the engine that powers our project."
+Responsibilities:
+
+"My job involved setting up the Flask app, which is like the manager of our project. I made sure it knows how to handle requests, talk to different parts of our project, and keep everything organized."
+Flask App Setup:
+
+"I created the routes in our Flask app, which are like paths for information to travel. For example, when you open the website, the app knows which page to show. It's like creating a roadmap for our project."
+Backend Logic:
+
+"I managed the backend logic, which is like the brain of our project. When a video frame comes in, I coordinated with the face detection and age/gender prediction parts to get the results and send them to the frontend. It's like making sure all the parts of our project talk to each other."
+Handling Requests:
+
+"If you click on a button or upload a file on our website, the Flask app knows what to do. It's like being the problem solver for our project, handling requests and making sure everything happens smoothly."
+Coordination with Others:
+
+"I worked closely with my teammates to understand what information they needed from the backend. It's like being the bridge between different parts of our project, making sure they work together seamlessly."
+Presenting to Sir:
+
+"When you interact with our project, and it responds quickly and accurately, that's the part I worked on. I'll be happy to show you how the backend makes everything come together and explain how we organized the project."
+Overall Contribution:
+
+"I'm proud that our project not only looks good but also works efficiently. It's like making sure everything is running smoothly behind the scenes. If you have any questions about how we made it happen, feel free to ask!"
+Encourage your friend to speak confidently, highlight the crucial role of the backend in making the project functional, and be prepared to showcase the responsiveness of the project during the exhibition. Emphasizing collaboration with other team members will also convey the teamwork involved in the project.

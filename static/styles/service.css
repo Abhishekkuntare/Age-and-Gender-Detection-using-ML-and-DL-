@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  padding-bottom: 70px;
 }
 .service_data > h1 {
   color: white;

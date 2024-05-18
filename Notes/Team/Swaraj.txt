@@ -1,0 +1,42 @@
+ROLE: SWARAJ - Web Frontend (HTML/CSS):
+
+3. Web Frontend (HTML/CSS):
+Responsibility: Designing and implementing the web frontend.
+Tasks:
+Create HTML templates for the main page, webcam page, and any other necessary pages.
+Design the layout, including video display areas, buttons, and any other UI elements using CSS.
+Ensure a responsive and user-friendly interface.
+
+Introduction:
+"Hello Sir! I worked on the part that makes the website look good and easy to use. It's like the design and style of our project."
+
+
+Responsibilities:
+"My job was to create the different pages you see on the website. I used HTML for the structure, like putting text and buttons in the right places. Then, I used CSS to make it all look nice with colors, fonts, and spacing."
+
+
+Layout Design:
+"I decided where things should go on the page, like where the video should be shown, where buttons go, and how everything fits together. It's like being an artist and arranging a beautiful picture."
+
+
+User-Friendly Interface:
+"I wanted to make sure our website is easy for everyone to use. So, I made sure the buttons are big enough, the text is clear, and it looks good on different devices like phones and computers."
+
+
+Collaboration with Others:
+"I talked with the other team members to understand what they needed on the website. It's like working together to build a cool clubhouse, and everyone should feel welcome inside."
+
+
+Making it Pretty:
+"I added colors, fonts, and made sure everything looks neat and tidy. It's like adding decorations to make our project stand out and look amazing."
+
+
+Presenting to Sir:
+"When you look at our project, what you see on the screen is what I worked on. I'll be happy to show you around and explain how we made the website look awesome."
+
+
+Overall Contribution:
+"My goal was to make our project not just work well, but also look great. I hope you like what you see, and I'm here to answer any questions you might have about the website."
+
+
+Encourage your friend to speak confidently, share specific examples, and express pride in the visual aspects of the project. Emphasizing the user-friendly and aesthetically pleasing nature of the website will showcase the value of his role.

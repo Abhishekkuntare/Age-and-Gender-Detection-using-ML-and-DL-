@@ -1,10 +1,3 @@
-'''
-OpenCV (Open Source Computer Vision) is a library with functions that mainly aiming real-time computer vision.
-OpenCV supports Deep Learning frameworks Caffe which has been implemented in this project.
-With OpenCV we have perform face detection using pre-trained
-deep learning face detector model which is shipped with the library.
-'''
-# Import the necessary packages
 import cv2
 import numpy as np
 import math
@@ -13,11 +6,25 @@ from flask import Flask, render_template, Response, request
 from PIL import Image
 import io
 
+# step 1: import all packages
+# cv2: OpenCV library for computer vision tasks.
+# numpy: NumPy for numerical operations.
+# math: Standard math library.
+# argparse: Handles command-line arguments.
+# Flask: Web application framework for creating the user interface.
+# PIL: Python Imaging Library for image processing.
+# io: Input/Output operations.
+
+# step 2: Configures Flask with an upload folder where uploaded files will be stored.
 UPLOAD_FOLDER = './UPLOAD_FOLDER'
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 
+
+# step 3: Face detection function Defines a function (highlightFace) for face detection.
+# Uses a pre-trained deep learning face detection model (net) to identify faces in the given frame.
+# Draws rectangles around the detected faces based on confidence levels.
 def highlightFace(net, frame, conf_threshold=0.7):
     frameOpencvDnn = frame.copy()
     frameHeight = frameOpencvDnn.shape[0]
@@ -49,6 +56,9 @@ def highlightFace(net, frame, conf_threshold=0.7):
     return frameOpencvDnn, faceBoxes
 
 
+
+# step 4:Uses argparse to parse command-line arguments.
+# Expects an optional --image argument for providing the input image file.
 # Gives input img to the prg for detection.
 # Using argparse library which was imported.
 parser = argparse.ArgumentParser()
@@ -57,31 +67,29 @@ parser.add_argument('--image')
 
 args = parser.parse_args()
 
-'''
-Each model comes with two files: weight file and model file
-weight file stores the data of the deployment of the model
-model file stores actual predication done by the model
-We are using pre trained models 
 
-The .prototxt file(s) which define the model architecture (i.e., the layers themselves)
-The .caffemodel file which contains the weights for the actual layers
-Both files are required when using models trained using Caffe for deep learning.
-'''
+
+# step 5: Frame Generation Function:
+# Defines a function (gen_frames) for generating video frames from a webcam feed.
+# Initializes pre-trained models for face detection, age prediction, and gender prediction.
+# Captures video from the default camera and processes each frame.
+# Detects faces, predicts age and gender, and sends processed frames to the web page for streaming.
+
 
 def gen_frames():
-    faceProto = "opencv_face_detector.pbtxt"
-    faceModel = "opencv_face_detector_uint8.pb"
+    faceProto = "opencv_face_detector.pbtxt"#Prototxt files describe the architecture of neural network models in a human-readable format. 
+    faceModel = "opencv_face_detector_uint8.pb"#file contains the trained weights and parameters of the face detection model. It's a serialized representation of the model that can be loaded and used for inference.
     ageProto = "age_deploy.prototxt"
     ageModel = "age_net.caffemodel"
     genderProto = "gender_deploy.prototxt"
-    genderModel = "gender_net.caffemodel"
+    genderModel = "gender_net.caffemodel" #file contains the trained weights and parameters of the age prediction model.
 
     MODEL_MEAN_VALUES = (78.4263377603, 87.7689143744, 114.895847746)
     # Defining age range.
-    ageList = ['(0-2)', '(4-6)', '(8-12)', '(15-20)',
-               '(25-32)', '(38-43)', '(48-53)', '(60-100)']
+    ageList = ['(0-2)', '(4-6)', '(8-12)', '(15-21)',
+               '(21-25)','(26-32)', '(38-43)', '(44-50)','(51-61)' '(62-100)']
     genderList = ['Male', 'Female']
-
+ 
     # LOAD NETWORK
     faceNet = cv2.dnn.readNet(faceModel, faceProto)
     ageNet = cv2.dnn.readNet(ageModel, ageProto)
@@ -137,10 +145,12 @@ def gen_frames():
                    b'Content-Type: image/jpeg\r\n\r\n' + bytearray(encodedImg) + b'\r\n')
 
 
-def gen_frames_photo(img_file):
+
+# manually select img from the system 
+def gen_frames_photo(img_file): 
     faceProto = "opencv_face_detector.pbtxt"
     faceModel = "opencv_face_detector_uint8.pb"
-    ageProto = "age_deploy.prototxt"
+    ageProto = "age_deploy.prototxt"# it describes the architecture of the age prediction model.
     ageModel = "age_net.caffemodel"
     genderProto = "gender_deploy.prototxt"
     genderModel = "gender_net.caffemodel"
@@ -148,7 +158,7 @@ def gen_frames_photo(img_file):
     MODEL_MEAN_VALUES = (78.4263377603, 87.7689143744, 114.895847746)
     # Defining age range.
     ageList = ['(0-2)', '(4-6)', '(8-12)', '(15-20)',
-               '(25-32)', '(38-43)', '(48-53)', '(60-100)']
+               '(21-32)', '(38-43)', '(44-60)', '(61-80)', '(81-100)']
     genderList = ['Male', 'Female']
 
     # LOAD NETWORK
@@ -211,6 +221,9 @@ def gen_frames_photo(img_file):
                     b'Content-Type: image/jpeg\r\n\r\n' + bytearray(encodedImg) + b'\r\n')
 
 
+
+# step 6: web application routes Defines Flask routes for different functionalities.
+# /: Renders the home page.
 @app.route('/')
 def index():
     """Video streaming home page."""
@@ -226,6 +239,7 @@ def webcam():
     return render_template('webcam.html')
 
 @app.route('/upload', methods=['GET', 'POST'])
+
 def upload_file():
     if request.method == 'POST':
         f = request.files['fileToUpload'].read()

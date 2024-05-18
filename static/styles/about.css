@@ -5,18 +5,21 @@
   flex-direction: column;
   font-family: "Luckiest Guy", cursive;
   text-align: center;
-background: url("https://cdn.dribbble.com/users/14268/screenshots/21033389/a07b5d0d-2c78-4df1-981f-82b2aaa2076e.png");
-height: 100vh;
+  /* background: url("https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.about > p{
+
+
+.about > p {
   font-family: "Luckiest Guy";
   text-transform: uppercase;
-  color:#d7c0f6;
-  font-size: 30px;
+  color: black;
+  font-size: 50px;
 }
 .about > h1 {
-    font-size: 60px;
-color: black;
+  font-size: 60px;
+  color: black;
   font-weight: 600;
   font-family: "Luckiest Guy", cursive;
 }
@@ -30,31 +33,26 @@ color: black;
   align-items: center;
   justify-content: center;
 }
-.about_imgs_div{
-
-    margin-left: 20px;
+.about_imgs_div {
+  margin-left: 20px;
 }
-.about_imgs_div > img{
-border-radius: 50%;
-width: 250px;
-transition: all 0.5s ease-in-out;
+.about_imgs_div > img {
+  border-radius: 50%;
+  width: 250px;
+  transition: all 0.5s ease-in-out;
 }
-.about_imgs_div > img:hover{
+.about_imgs_div > img:hover {
   transform: scale(1.1);
   cursor: pointer;
-  width: 300px;
 }
-.about_imgs_div > h2{
+.about_imgs_div > h2 {
   font-family: "Dancing Script";
   color: black;
   font-weight: 600;
 }
-.about_imgs_div > p{
+.about_imgs_div > p {
   color: black;
   font-family: "Abril Fatface";
   font-weight: 900;
   font-size: 18px;
 }
-
-
-
